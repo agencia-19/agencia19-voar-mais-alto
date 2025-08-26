@@ -66,13 +66,13 @@ const ValuesSection = () => {
           ))}
         </div>
 
-        {/* Quote section */}
+        {/* Inspirational quote section */}
         <div className="mt-20 text-center">
           <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 text-white">
             <blockquote className="text-xl md:text-2xl font-medium mb-4">
-              "Ele o cobrirá com as suas penas, e sob as suas asas você encontrará refúgio; a fidelidade dele será o seu escudo protetor."
+              "Seja forte e corajoso. Não se apavore nem desanime, pois temos a força da criatividade e do propósito para transformar qualquer desafio em oportunidade."
             </blockquote>
-            <cite className="text-white/80 font-medium">Salmo 91:4</cite>
+            <cite className="text-white/80 font-medium">Filosofia Agência 19</cite>
           </div>
         </div>
       </div>

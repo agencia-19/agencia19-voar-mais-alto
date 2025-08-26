@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-wings.jpg";
+import LogoComponent from "@/components/LogoComponent";
 
 const HeroSection = () => {
   return (
@@ -18,10 +19,12 @@ const HeroSection = () => {
 
       {/* Conteúdo */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        {/* Logo (placeholder por enquanto) */}
+        {/* Logo da Agência 19 */}
         <div className="mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full backdrop-blur-sm mb-6">
-            <span className="text-3xl font-bold text-white">19</span>
+          <div className="inline-flex items-center justify-center mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+              <LogoComponent variant="negative" size="lg" />
+            </div>
           </div>
         </div>
 

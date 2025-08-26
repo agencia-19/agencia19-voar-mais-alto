@@ -66,13 +66,13 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Versículos inspiradores */}
+        {/* Inspirational message */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12">
             <blockquote className="text-xl md:text-2xl font-medium text-support-black mb-4">
-              "Seja forte e corajoso! Não se apavore nem desanime, pois o Senhor, o seu Deus, estará com você por onde você andar."
+              "Seja forte e corajoso! Não se apavore nem desanime, pois a Agência 19 estará com você em cada passo da jornada para o sucesso."
             </blockquote>
-            <cite className="text-muted-foreground font-medium">Josué 1:9</cite>
+            <cite className="text-muted-foreground font-medium">Compromisso Agência 19</cite>
           </div>
         </div>
       </div>

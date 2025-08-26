@@ -1,3 +1,5 @@
+import LogoComponent from "@/components/LogoComponent";
+
 const Footer = () => {
   return (
     <footer className="bg-support-black text-white py-12">
@@ -6,10 +8,7 @@ const Footer = () => {
           {/* Logo e descrição */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-lg font-bold text-white">19</span>
-              </div>
-              <span className="text-xl font-bold">Agência 19</span>
+              <LogoComponent variant="negative" size="lg" />
             </div>
             <p className="text-white/70 leading-relaxed mb-6">
               Unimos criatividade, inovação e propósito para transformar marcas em experiências memoráveis.
