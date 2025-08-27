@@ -3,23 +3,24 @@ import { Card, CardContent } from "@/components/ui/card";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      company: "Café Aroma",
-      content: "A Agência 19 transformou completamente nossa identidade visual. Agora nossa marca transmite exatamente os valores que queremos comunicar.",
+      name: "Felipe Andrade",
+      company: "LoggiX",
+      content: "O ERP Sinamus, desenvolvido pela Agência 19, trouxe uma revolução para nossa gestão. Hoje temos total controle financeiro e operacional em tempo real, tudo de forma prática e intuitiva.",
       rating: 5,
     },
     {
-      name: "João Santos",
-      company: "TechStart",
-      content: "Profissionais extremamente criativos e comprometidos. Nosso site aumentou 300% as conversões após o trabalho da equipe.",
+      name: "Carolina Mendes",
+      company: "Clínica Vida+",
+      content: "Os agentes de Inteligência Artificial implementados revolucionaram nosso atendimento. Pacientes recebem respostas rápidas 24/7, e nossa satisfação do cliente disparou.",
       rating: 5,
     },
     {
-      name: "Ana Costa",
-      company: "Boutique Elegance",
-      content: "A consultoria estratégica nos ajudou a reposicionar nossa marca no mercado. Resultados excepcionais em pouco tempo.",
+      name: "Ricardo Oliveira",
+      company: "Construtora Prime",
+      content: "Precisávamos de um sistema sob medida e a Agência 19 entregou exatamente o que imaginávamos. A Fábrica de Software entendeu nossa identidade e criou uma solução completa.",
       rating: 5,
     },
+
   ];
 
   return (
@@ -68,16 +69,32 @@ const TestimonialsSection = () => {
 
         {/* Trust indicators */}
         <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-8">Confiança de empresas de diversos segmentos</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {/* Placeholder para logos de clientes */}
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="w-24 h-12 bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-xs text-muted-foreground">Logo {i}</span>
+          <p className="text-muted-foreground mb-8">
+            Confiança de empresas de diversos segmentos
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-90">
+            {[
+              { name: "APeC IASD", logo: "https://apec.adventistas.org/wp-content/themes/pa-theme-sedes/assets/sedes/pt/apec.svg" },
+              { name: "Podcast Beberibe1285", logo: "https://i1.sndcdn.com/avatars-mSGVm9QLGFnQykfU-gdkNRw-t240x240.jpg" },
+              { name: "Prefeitura de Pesqueira", logo: "https://pesqueira.pe.gov.br/wp-content/uploads/2025/01/LOGO-SITE-PMP-01.jpg" },
+            ].map((client, i) => (
+              <div
+                key={i}
+                className="w-24 flex flex-col items-center text-center"
+              >
+                <div className="w-24 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+                <span className="mt-2 text-xs text-muted-foreground">{client.name}</span>
               </div>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

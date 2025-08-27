@@ -1,27 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Sparkles, ShieldCheck, Target } from "lucide-react";
 
 const ValuesSection = () => {
   const values = [
     {
       title: "Criatividade",
       description: "para pensar além do óbvio.",
-      icon: "✨",
+      icon: <Sparkles className="w-6 h-6 text-primary" />,
       details: "Buscamos soluções inovadoras e originais que destacam sua marca no mercado.",
       gradient: "from-primary/20 to-primary/5",
       border: "border-primary/30",
     },
     {
-      title: "Fé",
+      title: "Convicção",
       description: "para acreditar no propósito de cada projeto.",
-      icon: "🙏",
-      details: "Trabalhamos com convicção e propósito, guiados por valores sólidos.",
-      gradient: "from-secondary/20 to-secondary/5", 
+      icon: <ShieldCheck className="w-6 h-6 text-secondary" />,
+      details: "Trabalhamos com clareza e propósito, guiados por valores sólidos.",
+      gradient: "from-secondary/20 to-secondary/5",
       border: "border-secondary/30",
     },
     {
       title: "Resultado",
       description: "para entregar impacto real aos nossos clientes.",
-      icon: "🎯",
+      icon: <Target className="w-6 h-6 text-accent-green" />,
       details: "Focamos em resultados mensuráveis que fazem a diferença no seu negócio.",
       gradient: "from-accent-green/20 to-accent-green/5",
       border: "border-accent-green/30",
@@ -44,8 +45,8 @@ const ValuesSection = () => {
         {/* Values Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className={`hover-lift bg-gradient-to-br ${value.gradient} ${value.border} text-center h-full group`}
             >
               <CardContent className="p-8">
@@ -70,7 +71,7 @@ const ValuesSection = () => {
         <div className="mt-20 text-center">
           <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 text-white">
             <blockquote className="text-xl md:text-2xl font-medium mb-4">
-              "Seja forte e corajoso. Não se apavore nem desanime, pois temos a força da criatividade e do propósito para transformar qualquer desafio em oportunidade."
+              "Temos a força da criatividade e do propósito para transformar qualquer desafio em oportunidade."
             </blockquote>
             <cite className="text-white/80 font-medium">Filosofia Agência 19</cite>
           </div>

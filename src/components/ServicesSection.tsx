@@ -4,41 +4,42 @@ import { Button } from "@/components/ui/button";
 const ServicesSection = () => {
   const services = [
     {
-      title: "Branding & Design",
-      description: "Identidade visual forte e marcante",
+      title: "SaaS",
+      description: "Toda a inovação que você precisa, a apenas uma assinatura de distância.",
       color: "from-primary/20 to-primary/5",
       borderColor: "border-primary/30",
       iconBg: "bg-primary",
-      details: "Criamos marcas que conectam emocionalmente com seu público e transmitem os valores do seu negócio.",
+      details: "Oferecemos soluções SaaS modernas que aproximam você do seu público e fortalecem os valores da sua marca, com praticidade e escalabilidade.",
     },
     {
-      title: "Marketing Digital",
-      description: "Estratégias para expandir sua presença online",
+      title: "Inteligência Artificial",
+      description: "Automatize processos e conquiste resultados até enquanto dorme.",
       color: "from-accent-blue/20 to-accent-blue/5",
       borderColor: "border-accent-blue/30",
       iconBg: "bg-accent-blue",
-      details: "Desenvolvemos estratégias digitais completas para aumentar sua visibilidade e engajamento.",
+      details: "Implementamos agentes inteligentes que otimizam o atendimento e garantem agilidade. Porque cada cliente bem atendido é uma oportunidade transformada em resultado.",
     },
     {
-      title: "Web & Apps",
-      description: "Tecnologia criativa a serviço do seu negócio",
+      title: "Fábrica de Software",
+      description: "Do zero ao extraordinário: criamos soluções sob medida para o seu negócio.",
       color: "from-accent-green/20 to-accent-green/5",
       borderColor: "border-accent-green/30",
       iconBg: "bg-accent-green",
-      details: "Criamos experiências digitais únicas que convertem visitantes em clientes fiéis.",
+      details: "Desenvolvemos sistemas personalizados que refletem a identidade da sua empresa e atendem exatamente às suas necessidades.",
     },
     {
       title: "Consultoria Estratégica",
-      description: "Visão clara para impulsionar resultados",
+      description: "Clareza e estratégia para levar sua empresa além.",
       color: "from-accent-purple/20 to-accent-purple/5",
       borderColor: "border-accent-purple/30",
       iconBg: "bg-accent-purple",
-      details: "Orientamos sua empresa com estratégias personalizadas para alcançar seus objetivos.",
+      details: "Guiamos o seu negócio com análises profundas e estratégias exclusivas, para transformar objetivos em conquistas reais.",
     },
+
   ];
 
   return (
-    <section className="py-20 bg-support-light/50">
+    <section id="services" className="py-20 bg-support-light/50">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -53,8 +54,8 @@ const ServicesSection = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className={`hover-lift bg-gradient-to-br ${service.color} ${service.borderColor} h-full group`}
             >
               <CardHeader>
@@ -82,11 +83,23 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
-          <Button variant="cta" size="xl">
+        <div className="px-4 flex justify-center">
+          <Button
+            variant="cta"
+            size="xl"
+            onClick={() =>
+              window.open(
+                "https://crm.agencia19.org/forms/quote/86f1725978bbd37a1227a2a347d18f45?styled=1&with_logo=1",
+                "_blank"
+              )
+            }
+            className="w-full sm:w-auto"
+          >
             Vamos conversar sobre seu projeto
           </Button>
         </div>
+
+
       </div>
     </section>
   );

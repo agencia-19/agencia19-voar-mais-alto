@@ -15,7 +15,7 @@ const AboutSection = () => {
                 A Agência 19 nasceu com o propósito de unir criatividade, inovação e propósito para transformar marcas em experiências memoráveis.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Nosso símbolo — a asa — representa velocidade, proteção e inspiração divina, lembrando que cada projeto é guiado por valores sólidos e visão de futuro.
+                Nosso símbolo — a asa — representa velocidade e resiliência para suportar qualquer dificuldade e entregar seu projeto no prazo. Lembrando que cada projeto é guiado por valores sólidos e visão de futuro.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const AboutSection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="font-semibold text-support-black mb-2">Proteção</h3>
+                    <h3 className="font-semibold text-support-black mb-2">Atenção</h3>
                     <p className="text-muted-foreground">
                       Cuidamos de cada detalhe do seu projeto com zelo e responsabilidade.
                     </p>
@@ -55,7 +55,7 @@ const AboutSection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-accent-green rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 className="font-semibold text-support-black mb-2">Inspiração Divina</h3>
+                    <h3 className="font-semibold text-support-black mb-2">Princípios</h3>
                     <p className="text-muted-foreground">
                       Cada projeto é guiado por valores sólidos e propósito maior.
                     </p>
@@ -70,7 +70,7 @@ const AboutSection = () => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12">
             <blockquote className="text-xl md:text-2xl font-medium text-support-black mb-4">
-              "Seja forte e corajoso! Não se apavore nem desanime, pois a Agência 19 estará com você em cada passo da jornada para o sucesso."
+              "Tornar ideias em realidade por meio da transformação digital."
             </blockquote>
             <cite className="text-muted-foreground font-medium">Compromisso Agência 19</cite>
           </div>

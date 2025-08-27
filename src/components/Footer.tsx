@@ -1,4 +1,6 @@
 import LogoComponent from "@/components/LogoComponent";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+
 
 const Footer = () => {
   return (
@@ -15,17 +17,17 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: '📷', link: '#' },
-                { icon: '💼', link: '#' },
-                { icon: '📘', link: '#' },
-                { icon: '📺', link: '#' },
+                { name: "Instagram", icon: Instagram, link: "https://instagram.com/@_agencia.19" },
+                { name: "LinkedIn", icon: Linkedin, link: "https://www.linkedin.com/company/agencia19" },
+                { name: "YouTube", icon: Youtube, link: "https://www.youtube.com/@Ag%C3%AAncia19" },
               ].map((social, index) => (
                 <button
                   key={index}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-300"
-                  onClick={() => window.open(social.link, '_blank')}
+                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 hover:scale-110"
+                  onClick={() => window.open(social.link, "_blank")}
+                  aria-label={social.name}
                 >
-                  <span>{social.icon}</span>
+                  <social.icon className="w-6 h-6 text-white" />
                 </button>
               ))}
             </div>
@@ -35,10 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Serviços</h3>
             <ul className="space-y-2 text-white/70">
-              <li><a href="#" className="hover:text-primary transition-colors">Branding & Design</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Marketing Digital</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Web & Apps</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Consultoria</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Saas</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Inteligência Artificial</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Fábrica de Software</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Consultoria</a></li>
             </ul>
           </div>
 
@@ -46,9 +48,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contato</h3>
             <ul className="space-y-2 text-white/70">
-              <li>contato@agencia19.com.br</li>
-              <li>(11) 99999-9999</li>
-              <li>São Paulo, SP</li>
+              <li>contato@agencia19.org</li>
+              <li>87 0 8125-2870</li>
+              <li>Belo Jardim, PE</li>
             </ul>
           </div>
         </div>
@@ -56,7 +58,7 @@ const Footer = () => {
         {/* Separador e copyright */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © 2024 Agência 19. Todos os direitos reservados.
+            © 2025 Agência 19. Todos os direitos reservados. CNPJ: 62.144.025/0001-16
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-white/60 text-sm hover:text-primary transition-colors">
