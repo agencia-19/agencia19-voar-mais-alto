@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Instagram, Linkedin, Youtube } from "lucide-react";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactSection = () => {
   const contactInfo = [
     {
-      icon: "📱",
+      icon: <FaWhatsapp size={24} className="text-green-500" color="white" />,
       title: "WhatsApp",
       description: "Resposta rápida para suas dúvidas",
       action: "Chamar no WhatsApp",
@@ -13,7 +14,7 @@ const ContactSection = () => {
       color: "hover:bg-accent-green/10 hover:border-accent-green/30",
     },
     {
-      icon: "✉️",
+      icon: <FaEnvelope size={24} className="text-blue-500" color="white" />,
       title: "E-mail",
       description: "contato@agencia19.com.br",
       action: "Enviar e-mail",
@@ -21,7 +22,7 @@ const ContactSection = () => {
       color: "hover:bg-accent-blue/10 hover:border-accent-blue/30",
     },
     {
-      icon: "📍",
+      icon: <FaMapMarkerAlt size={24} className="text-purple-500" color="white" />,
       title: "Localização",
       description: "Belo Jardim, PE",
       action: "Ver localização",
