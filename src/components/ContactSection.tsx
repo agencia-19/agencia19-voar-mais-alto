@@ -16,7 +16,7 @@ const ContactSection = () => {
     {
       icon: <FaEnvelope size={24} className="text-blue-500" color="white" />,
       title: "E-mail",
-      description: "contato@agencia19.com.br",
+      description: "contato@agencia19.org",
       action: "Enviar e-mail",
       link: "mailto:contato@agencia19.org",
       color: "hover:bg-accent-blue/10 hover:border-accent-blue/30",
